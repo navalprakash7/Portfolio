@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Android Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== Mobile Hamburger & Overlay ===== -->
+  <button id="hamburger" class="hamburger" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <div id="mobile-overlay" class="mobile-overlay" hidden></div>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-hidden="true" role="navigation">
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></a></li>
+      <li><a href="#about"><i class="fas fa-user"></i><span>About</span></a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+      <li><a href="#tools"><i class="fas fa-wrench"></i><span>Tools</span></a></li>
+      <li><a href="#projects"><i class="fas fa-folder-open"></i><span>Projects</span></a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Modern Sidebar Navigation ===== -->
+  <nav class="sidebar">
+    <ul>
+      <li class="nav-item active">
+        <a href="#home" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span class="tooltip">Home</span>
+        </a>
+      </li>
+      <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-user"></i><span class="tooltip">About</span></a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link"><i class="fas fa-code"></i><span class="tooltip">Skills</span></a></li>
+      <li class="nav-item"><a href="#tools" class="nav-link"><i class="fas fa-wrench"></i><span class="tooltip">Tools</span></a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i><span class="tooltip">Projects</span></a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span class="tooltip">Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Header ===== -->
+  <header id="home">
+    <h1 id="intro-text"></h1>
+    <p>I'm an Android Developer</p>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="about-card">
+      <h2>About Me</h2>
+      <p>I’m an Android Developer passionate about building intuitive, high-performance mobile applications. Skilled in Kotlin, Jetpack Compose, and modern Android architecture patterns like MVVM and Clean Architecture. I enjoy crafting smooth, user-friendly experiences with a focus on performance and clean code.</p>
+
+      <!-- ===== Education Section ===== -->
+      <div class="education-section">
+        <h3>Education</h3>
+        <div class="education-timeline">
+          <div class="education-item">
+            <div class="edu-header">
+              <h4>Class 10th–12th</h4>
+              <span class="edu-year">2020 – 2023</span>
+            </div>
+            <p>Completed from Children's Academy (CBSE) with a focus on Physics, Chemistry, and Mathematics.</p>
+          </div>
+          <div class="education-item">
+            <div class="edu-header">
+              <h4>Bachelor of Computer Applications (BCA)</h4>
+              <span class="edu-year">2023 – 2026</span>
+            </div>
+            <p>Pursuing at Mahatma Gandhi Kashi Vidyapith University, gaining hands-on experience in software development and application design.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://drive.google.com/drive/folders/1G-ixx96kfadd6o5THIGX-4OQr96uInle?usp=drive_link" download class="download-btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== Technical Skills ===== -->
+  <section id="skills">
+    <div class="skills-card">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="skill">Kotlin</div>
+        <div class="skill">Java</div>
+        <div class="skill">Jetpack Compose</div>
+        <div class="skill">XML layouts</div>
+        <div class="skill">Android SDK</div>
+        <div class="skill">MVVM, Clean Architecture</div>
+        <div class="skill">Material Design</div>
+        <div class="skill">RESTful APIs, JSON Parsing</div>
+        <div class="skill">Data Structures & Algorithms</div>
+        <div class="skill">Object Oriented Programming</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tools ===== -->
+  <section id="tools">
+    <div class="tools-card">
+      <h2>Tools</h2>
+      <div class="tools">
+        <div class="tool"><img src="images/android-studio-icon.webp" alt="Android Studio" /><p>Android Studio</p></div>
+        <div class="tool"><img src="images/gradle.webp" alt="Gradle" /><p>Gradle</p></div>
+        <div class="tool"><img src="images/git.png" alt="Git" /><p>Git</p></div>
+        <div class="tool"><img src="images/github.jpg" alt="GitHub" /><p>GitHub</p></div>
+        <div class="tool"><img src="images/vs.jpg" alt="VS Code" /><p>VS Code</p></div>
+        <div class="tool"><img src="images/firebase.png" alt="FireBase" /><p>FireBase</p></div>
+        <div class="tool"><img src="images/figma.jpg" alt="Figma" /><p>Figma</p></div>
+        <div class="tool"><img src="images/canva.jpg" alt="Canva" /><p>Canva</p></div>
+        <div class="tool"><img src="images/eclipse.png" alt="Eclipse IDE" /><p>Eclipse IDE</p></div>
+        <div class="tool"><img src="images/net.jpg" alt="Apache netbeans" /><p>Apache NetBeans</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects">
+    <div class="projects-box">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/convo.png" alt="Convo">
+          <h3>Convo</h3>
+          <p>Modern chat app built with Kotlin & Jetpack Compose, enabling seamless conversations, status sharing & intuitive navigation.</p>
+          <a href="https://github.com/navalprakash7?tab=repositories" target="_blank"><button class="project-btn">Get</button></a>
+        </div>
+        <div class="project-card">
+          <img src="images/blogify.jpg" alt="Blogify">
+          <h3>Blogify</h3>
+          <p>Android blogging app built with Kotlin and Firebase, featuring blog creation, editing, saving, and seamless management.</p>
+          <a href="https://github.com/navalprakash7/Blogify" target="_blank"><button class="project-btn">Get</button></a>
+        </div>
+        <div class="project-card">
+          <img src="images/mealbot.png" alt="MealBot">
+          <h3>MealBot</h3>
+          <p>A Kotlin-Firebase food ordering app with authentication, dynamic menus, cart management, and smooth bottom navigation.</p>
+          <a href="https://github.com/navalprakash7/MealBot" target="_blank"><button class="project-btn">Get</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <h2>Connect with me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.000000000000!2d83.0508627!3d25.3323592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE5JzU2LjUiTiA4M8KwMDMnMDMuMSJF!5e0!3m2!1sen!2sin!4v1730220000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+          <div class="horizontal-contact">
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Varanasi, Uttar Pradesh, India</span></div>
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>prakashnaval371@gmail.com</span></div>
+            <div class="contact-item"><i class="fas fa-phone"></i><span>+91 7905072537</span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/naval-prakash-364163244/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/navalprakash7" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/prakashnaval371/" target="_blank"><i class="fa-solid fa-code"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:navalprakash371@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>© 2025 Naval Prakash — Built using HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
