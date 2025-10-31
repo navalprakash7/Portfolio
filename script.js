@@ -43,10 +43,12 @@ const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobile-nav");
 const mobileOverlay = document.getElementById("mobile-overlay");
 
+// ✅ Single unified toggle function
 function toggleMobileNav() {
   const isOpen = hamburger.classList.toggle("open");
   mobileNav.classList.toggle("open", isOpen);
   mobileOverlay.classList.toggle("visible", isOpen);
+  document.body.classList.toggle("menu-open", isOpen); // 🚀 prevent scroll when open
 
   // Accessibility attributes
   hamburger.setAttribute("aria-expanded", isOpen);
@@ -59,29 +61,25 @@ function toggleMobileNav() {
   }
 }
 
-// Toggle nav on hamburger click
-hamburger.addEventListener("click", toggleMobileNav);
-
-// Close menu when clicking overlay
-mobileOverlay.addEventListener("click", () => {
-  closeMobileNav();
-});
-
-// Close menu when clicking a nav link
-mobileNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", closeMobileNav);
-});
-
+// Close menu helper
 function closeMobileNav() {
   hamburger.classList.remove("open");
   mobileNav.classList.remove("open");
   mobileOverlay.classList.remove("visible");
+  document.body.classList.remove("menu-open");
   hamburger.setAttribute("aria-expanded", "false");
   mobileNav.setAttribute("aria-hidden", "true");
   mobileOverlay.setAttribute("hidden", "");
 }
 
-// ===== Smooth Scrolling (Optional, Recommended) =====
+// Event listeners
+hamburger.addEventListener("click", toggleMobileNav);
+mobileOverlay.addEventListener("click", closeMobileNav);
+mobileNav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", closeMobileNav);
+});
+
+// ===== Smooth Scrolling =====
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const target = document.querySelector(this.getAttribute("href"));

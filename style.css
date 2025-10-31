@@ -791,3 +791,123 @@ header p {
 html {
   scroll-behavior: smooth;
 }
+
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+    min-height: 100dvh;
+    background-position: center;
+    padding: 120px 20px 60px;
+  }
+
+  #intro-text {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+  }
+
+  /* Reduce section padding */
+  #about, #skills, #tools, #projects {
+    padding: 60px 15px;
+  }
+
+  .about-card,
+  .skills-card,
+  .tools-card,
+  .projects-box {
+    padding: 25px 20px 40px;
+    border-radius: 14px;
+  }
+
+  /* Tools grid */
+  .tools {
+    gap: 25px;
+  }
+
+  .tool img {
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+  }
+
+  /* Projects */
+  .projects-grid {
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .project-card {
+    width: 220px;
+    padding: 16px;
+  }
+
+  .project-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  /* Education section */
+  .education-item {
+    padding: 14px 16px;
+  }
+
+  .edu-header h4 {
+    font-size: 1rem;
+  }
+
+  .edu-year {
+    font-size: 0.8rem;
+  }
+
+  /* Contact section stacks vertically */
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .horizontal-contact {
+    margin-top: 18px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer .social-links a {
+    font-size: 1.3rem;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Lock scroll when menu open */
+body.menu-open {
+  overflow: hidden;
+}
