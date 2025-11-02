@@ -899,13 +899,14 @@ body {
   }
 
   .tools {
-    gap: 25px;
+    gap: 20px;
   }
   .tool img {
     width: 70px;
     height: 70px;
     padding: 12px;
   }
+  
 
   /* Contact */
   .contact-container {
