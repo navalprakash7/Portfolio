@@ -899,7 +899,7 @@ body {
   }
 
   .tools {
-    gap: 20px;
+    gap: 25px;
   }
   .tool img {
     width: 70px;
@@ -929,4 +929,31 @@ body {
   .footer p {
     font-size: 0.85rem;
   }
+}
+
+/* ===== PERFORMANCE TWEAKS FOR MOBILE ===== */
+@media (max-width: 768px) {
+  /* Stop expensive animations & blurs */
+  #home::before {
+    animation: none !important;
+    opacity: 0.05;
+  }
+  .home-card,
+  .skills-card,
+  .tools-card,
+  .projects-box,
+  .contact-form {
+    backdrop-filter: none !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  /* Shorten transition times */
+  * {
+    transition-duration: 0.2s !important;
+  }
+}
+.nav-link,
+.sub-card,
+.home-photo img,
+.project-card {
+  will-change: transform;
 }

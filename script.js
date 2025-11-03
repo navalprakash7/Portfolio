@@ -1,4 +1,4 @@
-// ===== Highlight Active Sidebar Link on Scroll =====
+// ===== Highlight Sidebar Link on Scroll =====
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll(".sidebar li");
 
