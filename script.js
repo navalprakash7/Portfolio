@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// ===== Smooth Scrolling =====
+// ===== Smooth Scrollingg =======
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const target = document.querySelector(this.getAttribute("href"));
